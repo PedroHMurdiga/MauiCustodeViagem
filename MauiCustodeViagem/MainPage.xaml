@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiCustoViagem.MainPage">
+             x:Class="MauiCustodeViagem.MainPage">
 
     <ScrollView>
         <StackLayout>
@@ -12,18 +12,18 @@
             <Label Text="Destino:" />
             <Entry BindingContext="destino" x:Name="txt_destino" />
 
-            <Label Text="Distancia" />
+            <Label Text="Distância:" />
             <Entry BindingContext="distancia" x:Name="txt_distancia" />
 
-            <Label Text="Rendimento" />
+            <Label Text="Rendimento:" />
             <Entry BindingContext="rendimento" x:Name="txt_rendimento" />
 
-            <Label Text="Preço Combustivel" />
+            <Label Text="Preço do Combustível:" />
             <Entry BindingContext="valor_C" x:Name="txt_combustivel" />
 
-            <Button Margin="4" x:Name="btn_createPedagio" Text="Adicionar pedagio" Clicked="btn_createPedagio_Clicked"/>
-            <Button Margin="5" x:Name="btn_listPedagio" Text="Lista pedagio" Clicked="btn_listPedagio_Clicked"/>
-            <Button Margin="5" x:Name="btn_calcular" Text="Calcular" Clicked="btn_calcular_Clicked"/>
+            <Button Margin="3, 20, 3, 3" x:Name="btn_createPedagio" Text="Adicionar pedagio" Clicked="btn_createPedagio_Clicked" BackgroundColor="#4361ee"/>
+            <Button Margin="3" x:Name="btn_listPedagio" Text="Lista pedagio" Clicked="btn_listPedagio_Clicked" BackgroundColor="#4361ee"/>
+            <Button Margin="3" x:Name="btn_calcular" Text="Calcular" Clicked="btn_calcular_Clicked" BackgroundColor="#4361ee"/>
 
         </StackLayout>
     </ScrollView>
