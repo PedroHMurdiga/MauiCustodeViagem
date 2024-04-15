@@ -12,7 +12,7 @@
             <Label Text="Valor: "/>
             <Entry BindingContext="valor"  x:Name="txt_valor" />
 
-            <Button Text="Adicionar" Margin="3, 20, 0, 0" x:Name="btn_enviar" Clicked="btn_enviar_Clicked"/>
+            <Button Text="Adicionar" Margin="3, 20, 0, 0" x:Name="btn_enviar" Clicked="btn_enviar_Clicked" BackgroundColor="#4361ee"/>
 
         </StackLayout>
     </VerticalStackLayout>
