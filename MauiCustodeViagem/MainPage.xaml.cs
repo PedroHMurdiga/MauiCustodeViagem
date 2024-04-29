@@ -62,6 +62,6 @@ namespace MauiCustodeViagem
 
             await Navigation.PushAsync(new Views.CalcularViagem());
         }
-        }   
+          
     }
 }

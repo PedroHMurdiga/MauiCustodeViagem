@@ -1,3 +1,5 @@
+using MauiCustodeViagem.Models;
+
 namespace MauiCustodeViagem.Views;
 
 public partial class AdicionarPedagio : ContentPage
@@ -7,8 +9,20 @@ public partial class AdicionarPedagio : ContentPage
 		InitializeComponent();
 	}
 
-    private void btn_enviar_Clicked(object sender, EventArgs e)
+    private async void btn_enviar_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            pedagio p = new pedagio();
+            p.local = txt_local.Text;
+            p.valor = Convert.ToDouble(txt_valor.Text);
 
+            await App.Db.Insert(p);
+            await DisplayAlert("Sucesso!", "Pedagio foi adicionado", "Ok");
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Erro", ex.Message, "Ok");
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MauiCustodeViagem.Models
 {
-    internal class pedagio
+    public class pedagio
     {
             string _local;
             double _valor;
@@ -18,5 +18,5 @@ namespace MauiCustodeViagem.Models
             public double valor { get => _valor; set { _valor = value; } }
 
 
-        }
+    }
 }
