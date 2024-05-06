@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiCustodeViagem.Views.AdicionarPedagio"
-             Title="AdicionarPedagio">
+             Title="Adicionar Pedagio">
     
     <VerticalStackLayout>
         <StackLayout>
@@ -13,6 +13,7 @@
             <Entry BindingContext="valor"  x:Name="txt_valor" />
 
             <Button Text="Adicionar" Margin="3, 20, 0, 0" x:Name="btn_enviar" Clicked="btn_enviar_Clicked" BackgroundColor="#4361ee"/>
+            <Button Text="Voltar" Margin="3, 20, 0, 0" x:Name="btn_voltar" Clicked="btn_voltar_Clicked"  BackgroundColor="#4361ee"/>
 
         </StackLayout>
     </VerticalStackLayout>
